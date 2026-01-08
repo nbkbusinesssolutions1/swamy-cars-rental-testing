@@ -1,0 +1,227 @@
+/* SWAMI CAR RENTAL BRAND COLOR SYSTEM */
+    :root {
+      /* PRIMARY BRAND COLORS */
+      --primary-orange: #F39C12;
+      --secondary-blue: #3498DB;
+      
+      /* ACCENT & SUPPORTING COLORS */
+      --accent-purple: #8E44AD;
+      --accent-coral: #E67E22;
+      --accent-sky: #5DADE2;
+      
+      /* CTAs */
+      --cta-whatsapp: #25D366;
+      --cta-whatsapp-hover: #20BA5A;
+      --cta-primary: #F39C12;
+      --cta-primary-hover: #E67E22;
+      --cta-secondary: #3498DB;
+      --cta-secondary-hover: #2980B9;
+      
+      /* BACKGROUNDS */
+      --bg-main: #FFFFFF;
+      --bg-alternate: #F8F9FA;
+      --border-color: #E8ECEF;
+      
+      /* TEXT */
+      --text-heading: #2C3E50;
+      --text-body: #4A5568;
+      --text-muted: #718096;
+      --text-icon: #3498DB;
+    }
+    
+    html { scroll-behavior: smooth; }
+    .stagger-1 { animation-delay: 0.1s; }
+    .stagger-2 { animation-delay: 0.2s; }
+    .stagger-3 { animation-delay: 0.3s; }
+    .stagger-4 { animation-delay: 0.4s; }
+    .opacity-0 { opacity: 0; }
+    
+    /* Core Animation System from Summary */
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+    
+    @keyframes wiggle {
+      0%, 100% { transform: rotate(-3deg); }
+      50% { transform: rotate(3deg); }
+    }
+    
+    @keyframes pulse-glow {
+      0%, 100% { box-shadow: 0 0 20px hsl(25 95% 53% / 0.4); }
+      50% { box-shadow: 0 0 40px hsl(25 95% 53% / 0.7); }
+    }
+    
+    @keyframes slide-up {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    
+    @keyframes fade-in {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    
+    @keyframes scale-in {
+      0% { opacity: 0; transform: scale(0.9); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    
+    /* Hover Lift Effect */
+    .hover-lift {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .hover-lift:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    }
+    
+    /* Animation Delay Classes */
+    .delay-100 { animation-delay: 100ms; }
+    .delay-200 { animation-delay: 200ms; }
+    .delay-300 { animation-delay: 300ms; }
+    .delay-400 { animation-delay: 400ms; }
+    .delay-500 { animation-delay: 500ms; }
+    
+    /* Floating WhatsApp button */
+    .floating-whatsapp {
+      animation: scale-in 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) 1.5s backwards;
+    }
+    .floating-whatsapp:hover {
+      transform: scale(1.1);
+      animation: wiggle 0.5s ease-in-out;
+    }
+    
+    /* Pulse Glow for WhatsApp */
+    .pulse-glow {
+      animation: pulse-glow 2s ease-in-out infinite;
+    }
+    
+    /* Decorative blur circles float animation */
+    .animate-float {
+      animation: float 3s ease-in-out infinite;
+    }
+    
+    /* Form animations */
+    .form-input {
+      transition: all 0.3s ease;
+    }
+    
+    .form-input:focus {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 20px rgba(52, 152, 219, 0.15);
+    }
+    
+    /* Card hover animations */
+    .card-hover {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .card-hover:hover {
+      transform: translateY(-6px) scale(1.04);
+      box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+    }
+
+    /* Footer Visual System - Same as Homepage */
+    .site-footer {
+      position: relative;
+      margin-top: 4rem;
+      background: radial-gradient(circle at top right, rgba(125, 211, 252, 0.15), transparent 45%),
+        radial-gradient(circle at bottom left, rgba(16, 185, 129, 0.15), transparent 55%),
+        linear-gradient(135deg, #050b18 0%, #0f172a 45%, #17233f 100%);
+      overflow: hidden;
+      border-top: 1px solid rgba(148, 163, 184, 0.15);
+    }
+
+    .site-footer::before,
+    .site-footer::after {
+      content: '';
+      position: absolute;
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      filter: blur(35px);
+      opacity: 0.35;
+      z-index: 0;
+    }
+
+    .site-footer::before {
+      top: -120px;
+      right: -80px;
+      background: radial-gradient(circle, rgba(59, 130, 246, 0.35), transparent 60%);
+    }
+
+    .site-footer::after {
+      bottom: -150px;
+      left: -140px;
+      background: radial-gradient(circle, rgba(16, 185, 129, 0.35), transparent 60%);
+    }
+
+    .site-footer > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .footer-label {
+      display: inline-block;
+      text-transform: uppercase;
+      letter-spacing: 0.4em;
+      font-size: 0.65rem;
+      color: rgba(226, 232, 240, 0.6);
+    }
+
+    .footer-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.45rem 0.9rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      background: rgba(15, 23, 42, 0.4);
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: #f8fafc;
+    }
+
+    .footer-nav-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.75rem;
+    }
+
+    .footer-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.85rem 1.35rem;
+      border-radius: 999px;
+      background: #fff;
+      color: #0f172a;
+      font-weight: 600;
+      font-size: 0.95rem;
+      box-shadow: 0 20px 45px rgba(15, 23, 42, 0.3);
+      transition: transform 0.25s var(--anim-ease), box-shadow 0.25s var(--anim-ease);
+    }
+
+    .footer-cta:hover,
+    .footer-cta:focus-visible {
+      transform: translateY(-2px);
+      box-shadow: 0 30px 60px rgba(15, 23, 42, 0.35);
+    }
+
+    .footer-meta {
+      color: rgba(226, 232, 240, 0.65);
+      font-size: 0.72rem;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+    }
+
+    .footer-meta a {
+      color: inherit;
+    }
+
+    .footer-meta a:hover,
+    .footer-meta a:focus-visible {
+      color: #fff;
+    }

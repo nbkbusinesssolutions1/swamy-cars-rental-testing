@@ -1,0 +1,946 @@
+/* SWAMI CAR RENTAL BRAND COLOR SYSTEM */
+    :root {
+      /* PRIMARY BRAND COLORS */
+      --primary-orange: #F39C12;
+      --secondary-blue: #3498DB;
+      
+      /* ACCENT & SUPPORTING COLORS */
+      --accent-purple: #8E44AD;
+      --accent-coral: #E67E22;
+      --accent-sky: #5DADE2;
+      
+      /* CTAs */
+      --cta-whatsapp: #25D366;
+      --cta-whatsapp-hover: #20BA5A;
+      --cta-primary: #F39C12;
+      --cta-primary-hover: #E67E22;
+      --cta-secondary: #3498DB;
+      --cta-secondary-hover: #2980B9;
+      
+      /* BACKGROUNDS */
+      --bg-main: #FFFFFF;
+      --bg-alternate: #F8F9FA;
+      --border-color: #E8ECEF;
+      
+      /* TEXT */
+      --text-heading: #2C3E50;
+      --text-body: #4A5568;
+      --text-muted: #718096;
+      --text-icon: #3498DB;
+    }
+    
+    html { 
+      scroll-behavior: smooth;
+    }
+    /* MODERN PREMIUM FOOTER SYSTEM */
+    .site-footer {
+      position: relative;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+      color: #e2e8f0;
+      overflow: hidden;
+      margin-top: 4rem;
+    }
+
+    .footer-wave {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 80px;
+      opacity: 0.8;
+      animation: waveAnimation 20s ease-in-out infinite;
+      will-change: transform;
+    }
+
+    @keyframes waveAnimation {
+      0%, 100% { transform: translateX(0) translateY(0); }
+      25% { transform: translateX(-10px) translateY(-3px); }
+      50% { transform: translateX(-20px) translateY(-5px); }
+      75% { transform: translateX(-10px) translateY(-3px); }
+    }
+
+    @media (max-width: 768px) {
+      .footer-wave {
+        height: 60px;
+        animation: waveAnimationMobile 15s ease-in-out infinite;
+      }
+
+      @keyframes waveAnimationMobile {
+        0%, 100% { transform: translateX(0) translateY(0); }
+        50% { transform: translateX(-15px) translateY(-3px); }
+      }
+    }
+
+    .footer-container {
+      position: relative;
+      z-index: 2;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 5rem 2rem 3rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.8fr 1fr 1.2fr;
+      gap: 4rem;
+      margin-bottom: 3rem;
+    }
+
+    /* Brand Section */
+    .footer-brand-section {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      animation: fadeInUp 0.8s ease-out;
+      will-change: transform, opacity;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .footer-logo {
+        animation: fadeInUpMobile 0.6s ease-out;
+      }
+
+      @keyframes fadeInUpMobile {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+
+    .logo-img {
+      width: 60px;
+      height: 60px;
+      border-radius: 16px;
+      object-fit: cover;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      border: 2px solid rgba(255, 255, 255, 0.1);
+      will-change: transform, box-shadow;
+    }
+
+    .logo-img:hover {
+      transform: scale(1.08) rotate(2deg);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+      border-color: rgba(59, 130, 246, 0.4);
+    }
+
+    @media (max-width: 768px) {
+      .logo-img:hover {
+        transform: scale(1.05) rotate(1deg);
+      }
+    }
+
+    @media (hover: none) {
+      .logo-img:hover {
+        transform: none;
+      }
+    }
+
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo-title {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: #fff;
+      margin: 0;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+
+    .logo-subtitle {
+      font-size: 0.95rem;
+      color: #94a3b8;
+      margin: 0;
+      margin-top: 4px;
+      font-weight: 500;
+    }
+
+    .footer-description {
+      color: #cbd5e1;
+      line-height: 1.7;
+      font-size: 0.95rem;
+      max-width: 400px;
+      animation: fadeInUp 0.8s ease-out 0.2s both;
+      will-change: transform, opacity;
+    }
+
+    .footer-badges {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      animation: fadeInUp 0.8s ease-out 0.4s both;
+      will-change: transform, opacity;
+    }
+
+    .badge-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      color: #e2e8f0;
+      font-size: 0.9rem;
+      padding: 0.75rem 1rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: all 0.3s ease;
+      will-change: transform, background;
+    }
+
+    .badge-item:hover {
+      background: rgba(255, 255, 255, 0.08);
+      transform: translateX(4px);
+      border-color: rgba(255, 255, 255, 0.15);
+    }
+
+    @media (max-width: 768px) {
+      .footer-description {
+        font-size: 0.9rem;
+        max-width: 100%;
+      }
+
+      .badge-item:hover {
+        transform: translateX(2px);
+      }
+    }
+
+    .badge-icon {
+      width: 20px;
+      height: 20px;
+      color: #fbbf24;
+      flex-shrink: 0;
+    }
+
+    /* Footer Sections */
+    .footer-section {
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+      animation: fadeInUp 0.8s ease-out 0.6s both;
+      will-change: transform, opacity;
+    }
+
+    @media (max-width: 768px) {
+      .footer-section {
+        animation: fadeInUpMobile 0.6s ease-out 0.3s both;
+      }
+    }
+
+    .footer-title {
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #94a3b8;
+      margin: 0;
+      position: relative;
+      padding-bottom: 0.5rem;
+    }
+
+    .footer-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 40px;
+      height: 2px;
+      background: linear-gradient(90deg, #3b82f6, #fb923c);
+      border-radius: 1px;
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .footer-link-item {
+      display: flex;
+      align-items: center;
+      gap: 0.875rem;
+      color: #cbd5e1;
+      text-decoration: none;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      padding: 0.75rem 1rem;
+      border-radius: 12px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      position: relative;
+      overflow: hidden;
+      will-change: transform, color;
+    }
+
+    .footer-link-item::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(251, 146, 60, 0.05));
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      will-change: opacity;
+    }
+
+    .footer-link-item:hover {
+      color: #fff;
+      transform: translateX(8px);
+    }
+
+    .footer-link-item:hover::before {
+      opacity: 1;
+    }
+
+    .footer-link-item:hover .link-icon {
+      color: #fbbf24;
+      transform: scale(1.1);
+    }
+
+    @media (max-width: 768px) {
+      .footer-link-item {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.85rem;
+      }
+
+      .footer-link-item:hover {
+        transform: translateX(4px);
+      }
+
+      .footer-link-item:hover .link-icon {
+        transform: scale(1.05);
+      }
+    }
+
+    .link-icon {
+      width: 20px;
+      height: 20px;
+      stroke-width: 2;
+      transition: all 0.3s ease;
+      color: #94a3b8;
+    }
+
+    /* Contact Cards */
+    .contact-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .contact-card {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1.25rem;
+      border-radius: 16px;
+      text-decoration: none;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      position: relative;
+      overflow: hidden;
+      will-change: transform, box-shadow;
+    }
+
+    .contact-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      will-change: opacity;
+    }
+
+    .contact-card.whatsapp {
+      background: linear-gradient(135deg, rgba(34, 197, 94, 0.1), rgba(16, 185, 129, 0.05));
+      border-color: rgba(34, 197, 94, 0.2);
+    }
+
+    .contact-card.whatsapp::before {
+      background: linear-gradient(135deg, rgba(34, 197, 94, 0.2), rgba(16, 185, 129, 0.1));
+    }
+
+    .contact-card.whatsapp:hover {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 12px 32px rgba(34, 197, 94, 0.3);
+      border-color: rgba(34, 197, 94, 0.4);
+    }
+
+    .contact-card.whatsapp:hover::before {
+      opacity: 1;
+    }
+
+    .contact-card.phone {
+      background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(37, 99, 235, 0.05));
+      border-color: rgba(59, 130, 246, 0.2);
+    }
+
+    .contact-card.phone::before {
+      background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(37, 99, 235, 0.1));
+    }
+
+    .contact-card.phone:hover {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 12px 32px rgba(59, 130, 246, 0.3);
+      border-color: rgba(59, 130, 246, 0.4);
+    }
+
+    .contact-card.phone:hover::before {
+      opacity: 1;
+    }
+
+    @media (max-width: 768px) {
+      .contact-card {
+        padding: 1rem;
+      }
+    }
+
+    .contact-icon svg {
+      width: 36px;
+      height: 36px;
+      color: #fff;
+    }
+
+    .contact-content h5 {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .contact-content p {
+      margin: 4px 0;
+      font-size: 0.95rem;
+      color: #cbd5e1;
+    }
+
+    .contact-content span {
+      font-size: 0.85rem;
+      color: rgba(226, 232, 240, 0.8);
+    }
+
+    .location-card {
+      margin-top: 1.5rem;
+      padding: 1.5rem;
+      border-radius: 16px;
+      background: rgba(15, 23, 42, 0.4);
+      border: 1px solid rgba(148, 163, 184, 0.2);
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+
+    .location-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: rgba(15, 23, 42, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .location-icon svg {
+      width: 24px;
+      height: 24px;
+      color: #38bdf8;
+    }
+
+    .location-content h5 {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .location-content p {
+      margin: 4px 0 0;
+      color: #cbd5e1;
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(148, 163, 184, 0.2);
+      padding-top: 2rem;
+    }
+
+    .footer-bottom-content {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .footer-bottom-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    .footer-bottom-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .bottom-link {
+      color: #cbd5e1;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.3s ease;
+    }
+
+    .bottom-link:hover {
+      color: #fff;
+    }
+
+    .designer {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .designer-icon {
+      width: 20px;
+      height: 20px;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 992px) {
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .footer-container {
+        padding: 4rem 1.5rem 2.5rem;
+      }
+    }
+    html { 
+      overflow-x: hidden;
+    }
+    
+    body {
+      background: var(--bg-main);
+      min-height: 100vh;
+      overflow-x: hidden;
+      color: var(--text-body);
+    }
+    
+    /* Custom Selection */
+    ::selection {
+      background: var(--secondary-blue);
+      color: white;
+    }
+    /* Premium Card System */
+    .card-base { 
+      background: var(--bg-main);
+      border-radius: 24px; 
+      border: 1px solid var(--border-color);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05), 0 4px 12px rgba(0,0,0,0.08);
+      padding: 0; 
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    @media (max-width: 768px) {
+      .card-base {
+        border-radius: 20px;
+      }
+    }
+    
+    .card-base::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--primary-orange) 0%, var(--secondary-blue) 100%);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+    
+    .card-base:hover::before {
+      opacity: 1;
+    }
+    
+    .card-base:hover { 
+      transform: translateY(-8px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.12), 0 20px 40px rgba(243, 156, 18, 0.15);
+      border-color: rgba(243, 156, 18, 0.2);
+    }
+    /* Typography Gradients */
+    .text-gradient {
+      background: linear-gradient(90deg, var(--primary-orange) 0%, var(--secondary-blue) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .text-orange-gradient {
+      background: linear-gradient(135deg, var(--primary-orange) 0%, var(--accent-coral) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .text-blue-gradient {
+      background: linear-gradient(135deg, var(--secondary-blue) 0%, var(--accent-sky) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    /* Typography System */
+    .heading-bold {
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+    
+    .heading-display {
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+    }
+    
+    .text-shadow {
+      text-shadow: 0 2px 4px rgba(15, 23, 42, 0.1);
+    }
+    
+    .label-text {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    /* Car Card Typography */
+    .car-name {
+      font-weight: 700;
+      color: var(--text-heading);
+      letter-spacing: -0.01em;
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+    
+    @media (max-width: 640px) {
+      .car-name {
+        font-size: 1.25rem;
+      }
+    }
+    /* Spec Badges */
+    .car-specs span {
+      font-weight: 500;
+      font-size: 0.75rem;
+      padding: 0.375rem 0.75rem;
+      background: var(--bg-alternate);
+      border-radius: 8px;
+      color: var(--text-body);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .car-specs span:hover {
+      background: var(--border-color);
+      transform: translateY(-1px);
+    }
+    .car-description {
+      font-weight: 400;
+      line-height: 1.7;
+      color: var(--text-body);
+      font-size: 0.9375rem;
+    }
+    /* Premium Price Display */
+    .price-amount {
+      font-weight: 800;
+      font-size: 2rem;
+      background: linear-gradient(90deg, var(--primary-orange) 0%, var(--secondary-blue) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: -0.02em;
+      line-height: 1;
+    }
+    
+    @media (max-width: 640px) {
+      .price-amount {
+        font-size: 1.5rem;
+      }
+    }
+    /* Premium Button System */
+    .btn-base { 
+      min-height: 56px; 
+      padding: 1rem 2rem; 
+      border-radius: 14px; 
+      display: inline-flex; 
+      align-items: center; 
+      justify-content: center; 
+      gap: 0.625rem; 
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    
+    @media (max-width: 640px) {
+      .btn-base {
+        min-height: 48px;
+        padding: 0.875rem 1.5rem;
+        font-size: 0.9375rem;
+      }
+    }
+    
+    .btn-base::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.2);
+      transform: translate(-50%, -50%);
+      transition: width 0.6s, height 0.6s;
+    }
+    
+    .btn-base:hover::before {
+      width: 300px;
+      height: 300px;
+    }
+    
+    .btn-base:hover {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    }
+    
+    .btn-base:active {
+      transform: translateY(0) scale(0.98);
+    }
+    /* Modern Filter Chips */
+    .filter-chip { 
+      transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+      cursor: pointer; 
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    @media (max-width: 640px) {
+      .filter-chip {
+        font-size: 0.8125rem;
+      }
+    }
+    
+    .filter-chip::after {
+      content: '';
+      position: absolute;
+      inset: -2px;
+      border-radius: 9999px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    
+    .filter-chip:hover { 
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+    
+    .filter-chip:hover::after {
+      opacity: 0.3;
+    }
+    
+    .filter-chip.active { 
+      transform: translateY(-1px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    }
+    
+    .filter-chip.active::after {
+      opacity: 0;
+    }
+    /* Car Card Image Effects */
+    .car-card {
+      position: relative;
+    }
+    
+    .car-card .relative {
+      overflow: hidden;
+      border-radius: 20px 20px 0 0;
+    }
+    
+    .car-card img {
+      transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    
+    .car-card:hover img {
+      transform: scale(1.08);
+    }
+    
+    .car-card .relative::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 50%;
+      background: linear-gradient(to top, rgba(44, 62, 80, 0.7) 0%, transparent 100%);
+      pointer-events: none;
+    }
+    /* Premium Price Tag */
+    .price-tag {
+      background: linear-gradient(135deg, rgba(243, 156, 18, 0.1) 0%, rgba(52, 152, 219, 0.1) 100%);
+      border: 2px solid rgba(52, 152, 219, 0.2);
+      border-radius: 16px;
+      padding: 1rem 1.25rem;
+      position: relative;
+      backdrop-filter: blur(10px);
+    }
+    
+    .price-tag::before {
+      content: '';
+      position: absolute;
+      inset: -2px;
+      background: linear-gradient(90deg, var(--primary-orange) 0%, var(--secondary-blue) 100%);
+      border-radius: 18px;
+      z-index: -1;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+    
+    .car-card:hover .price-tag {
+      border-color: rgba(52, 152, 219, 0.4);
+      background: linear-gradient(135deg, rgba(243, 156, 18, 0.15) 0%, rgba(52, 152, 219, 0.15) 100%);
+    }
+    
+    .car-card:hover .price-tag::before {
+      opacity: 0.15;
+    }
+    
+    /* Mobile Optimizations */
+    @media (max-width: 768px) {
+      .card-base:hover {
+        transform: translateY(-4px);
+      }
+      
+      .filter-chip:hover {
+        transform: translateY(-2px);
+      }
+      
+      .car-card:hover img {
+        transform: scale(1.05);
+      }
+    }
+    
+    @media (max-width: 640px) {
+      /* Disable hover effects on touch devices */
+      .card-base:hover {
+        transform: none;
+      }
+      
+      .filter-chip:hover {
+        transform: none;
+      }
+      
+      .btn-base:hover {
+        transform: none;
+      }
+    }
+    
+    /* Core Animation System from Summary */
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+    
+    @keyframes wiggle {
+      0%, 100% { transform: rotate(-3deg); }
+      50% { transform: rotate(3deg); }
+    }
+    
+    @keyframes pulse-glow {
+      0%, 100% { box-shadow: 0 0 20px hsl(25 95% 53% / 0.4); }
+      50% { box-shadow: 0 0 40px hsl(25 95% 53% / 0.7); }
+    }
+    
+    @keyframes slide-up {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    
+    @keyframes fade-in {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    
+    @keyframes scale-in {
+      0% { opacity: 0; transform: scale(0.9); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    
+    /* Hover Lift Effect */
+    .hover-lift {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .hover-lift:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    }
+    
+    /* Animation Delay Classes */
+    .delay-100 { animation-delay: 100ms; }
+    .delay-200 { animation-delay: 200ms; }
+    .delay-300 { animation-delay: 300ms; }
+    .delay-400 { animation-delay: 400ms; }
+    .delay-500 { animation-delay: 500ms; }
+    
+    /* Floating WhatsApp button */
+    .floating-whatsapp {
+      animation: scale-in 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) 1.5s backwards;
+    }
+    .floating-whatsapp:hover {
+      transform: scale(1.1);
+      animation: wiggle 0.5s ease-in-out;
+    }
+    
+    /* Pulse Glow for WhatsApp */
+    .pulse-glow {
+      animation: pulse-glow 2s ease-in-out infinite;
+    }
+    
+    /* Decorative blur circles float animation */
+    .animate-float {
+      animation: float 3s ease-in-out infinite;
+    }
