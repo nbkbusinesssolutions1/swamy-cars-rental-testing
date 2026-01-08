@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect fill="#f5f5f5" width="800" height="500"/>
+  <rect fill="#e5e5e5" x="50" y="50" width="700" height="400" rx="12"/>
+  <text x="400" y="240" font-family="Arial, sans-serif" font-size="24" fill="#737373" text-anchor="middle">
+    Car Image
+  </text>
+  <text x="400" y="280" font-family="Arial, sans-serif" font-size="16" fill="#a3a3a3" text-anchor="middle">
+    Replace with actual photo
+  </text>
+  <path d="M350 180 L400 140 L450 180 L440 180 L440 220 L360 220 L360 180 Z" fill="#d4d4d4"/>
+  <circle cx="400" cy="200" r="15" fill="#d4d4d4"/>
+</svg>
+
