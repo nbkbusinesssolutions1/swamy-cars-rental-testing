@@ -1,0 +1,138 @@
+{
+  "fleet": [
+    {
+      "id": "baleno-2025",
+      "name": "Maruti Baleno",
+      "model": "2025",
+      "price": 1300,
+      "priceFormatted": "₹1,300",
+      "seats": 5,
+      "fuel": "Petrol",
+      "transmission": "Manual",
+      "category": ["hatchback", "premium"],
+      "badge": "City Favorite",
+      "caption": "Premium hatchback comfort with excellent mileage for longer drives.",
+      "img": {
+        "card": "assets/images/cars/baleno.webp",
+        "alt": "Maruti Baleno hatchback rental Goa"
+      },
+      "whatsappMsg": "I'm interested in booking the Maruti Baleno"
+    },
+    {
+      "id": "swift-2025",
+      "name": "Maruti Swift",
+      "model": "2025",
+      "price": 1200,
+      "priceFormatted": "₹1,200",
+      "seats": 5,
+      "fuel": "Petrol",
+      "transmission": "Manual",
+      "category": ["hatchback", "budget"],
+      "badge": "Budget Pick",
+      "caption": "Most booked hatchback for Goa getaways. Zippy and reliable.",
+      "img": {
+        "card": "assets/images/cars/swift.webp",
+        "alt": "Maruti Swift hatchback rental Goa"
+      },
+      "whatsappMsg": "I'm interested in booking the Maruti Swift"
+    },
+    {
+      "id": "breeza-2025",
+      "name": "Maruti Brezza",
+      "model": "2025",
+      "price": 1700,
+      "priceFormatted": "₹1,700",
+      "seats": 5,
+      "fuel": "Petrol",
+      "transmission": "Automatic",
+      "category": ["suv", "compact"],
+      "badge": "SUV Favorite",
+      "caption": "Compact SUV with higher ground clearance for Goa's varied roads.",
+      "img": {
+        "card": "assets/images/cars/brezza.webp",
+        "alt": "Maruti Brezza compact SUV rental Goa"
+      },
+      "whatsappMsg": "I'm interested in booking the Maruti Brezza"
+    },
+    {
+      "id": "ertiga-2025",
+      "name": "Maruti Ertiga",
+      "model": "2025",
+      "price": 2000,
+      "priceFormatted": "₹2,000",
+      "seats": 7,
+      "fuel": "Petrol",
+      "transmission": "Automatic",
+      "category": ["mpv", "family"],
+      "badge": "Family Ready",
+      "caption": "Comfortable 7-seater for families or groups needing extra space.",
+      "img": {
+        "card": "assets/images/cars/ertiga.webp",
+        "alt": "Maruti Ertiga MPV rental Goa"
+      },
+      "whatsappMsg": "I'm interested in booking the Maruti Ertiga"
+    },
+    {
+      "id": "thar-2025",
+      "name": "Mahindra Thar",
+      "model": "2025",
+      "price": 3000,
+      "priceFormatted": "₹3,000",
+      "seats": 4,
+      "fuel": "Diesel",
+      "transmission": "Manual",
+      "category": ["suv", "adventure"],
+      "badge": "Most Wanted",
+      "caption": "Open-top SUV for sunset drives, beach runs, and adventure trails.",
+      "img": {
+        "card": "assets/images/cars/thar.webp",
+        "alt": "Mahindra Thar adventure rental Goa"
+      },
+      "whatsappMsg": "I'm interested in booking the Mahindra Thar"
+    },
+    {
+      "id": "ignis-2025",
+      "name": "Maruti Ignis",
+      "model": "2025",
+      "price": 1200,
+      "priceFormatted": "₹1,200",
+      "seats": 5,
+      "fuel": "Petrol",
+      "transmission": "Manual",
+      "category": ["hatchback", "compact"],
+      "badge": "Compact",
+      "caption": "Compact hatch that fits narrow lanes while keeping a stylish profile.",
+      "img": {
+        "card": "assets/images/cars/ignis-car.webp",
+        "alt": "Maruti Ignis compact rental Goa"
+      },
+      "whatsappMsg": "I'm interested in booking the Maruti Ignis"
+    },
+    {
+      "id": "innova-2025",
+      "name": "Toyota Innova Crysta",
+      "model": "2025",
+      "price": 3000,
+      "priceFormatted": "₹3,000",
+      "seats": 7,
+      "fuel": "Diesel",
+      "transmission": "Automatic",
+      "category": ["mpv", "premium"],
+      "badge": "Premium MPV",
+      "caption": "Premium 7-seater with captain seats. Best for long drives in comfort.",
+      "img": {
+        "card": "assets/images/cars/innova.webp",
+        "alt": "Toyota Innova Crysta rental Goa"
+      },
+      "whatsappMsg": "I'm interested in booking the Toyota Innova Crysta"
+    }
+  ],
+  "categories": [
+    { "id": "hatchback", "label": "Hatchbacks" },
+    { "id": "suv", "label": "Compact & Adventure SUVs" },
+    { "id": "mpv", "label": "Family MPVs" }
+  ],
+  "whatsappNumber": "917972719764",
+  "whatsappBaseUrl": "https://wa.me/917972719764"
+}
+
