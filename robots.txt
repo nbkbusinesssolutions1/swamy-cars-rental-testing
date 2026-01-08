@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Allow: /images/
+Allow: /favicon/
+Disallow: /node_modules/
+Disallow: /dist/
+Disallow: /build/
+Disallow: /.git/
+Disallow: /.vscode/
+Disallow: /.idea/
+Disallow: /components/
+
+Sitemap: https://www.swamicarsrental.site/sitemap.xml

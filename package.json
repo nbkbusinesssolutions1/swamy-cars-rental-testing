@@ -1,0 +1,34 @@
+{
+  "name": "new-project",
+  "version": "1.0.0",
+  "description": "Swami Cars Rental marketing site built with Vite and Tailwind CSS.",
+  "main": "index.js",
+  "scripts": {
+    "css:watch": "npx tailwindcss -c tailwind.config.cjs -i assets/css/main.css -o assets/css/tailwind.build.css --watch --postcss",
+    "css:build": "npx tailwindcss -c tailwind.config.cjs -i assets/css/main.css -o assets/css/tailwind.build.css --minify --postcss",
+    "dev": "concurrently \"npm run css:watch\" \"vite\"",
+    "build": "npm run css:build && vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nbkbusinesssolutions/swamycarsrental.git"
+  },
+  "keywords": [],
+  "author": "NBK Business Solutions",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/nbkbusinesssolutions/swamycarsrental/issues"
+  },
+  "homepage": "https://github.com/nbkbusinesssolutions/swamycarsrental#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.23",
+    "concurrently": "^9.2.1",
+    "postcss": "^8.5.6",
+    "postcss-import": "^16.1.1",
+    "sharp": "^0.34.5",
+    "tailwindcss": "^3.4.13",
+    "vite": "^7.3.0"
+  }
+}
